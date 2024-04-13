@@ -12,7 +12,7 @@ int main()
     cin >> fileName;
     do
     {
-        cout << "\n\n\n\t1. Enter Student data \n\t2. For add in file \n\t3. Read Student Data \n\t4. Read All File Data \n\t5. Find Student \n\t0. Exit" << endl;
+        cout << "\n\n\n\t1. Enter Student data \n\t2. For add in file \n\t3. Read All File Data \n\t4. Find Student \n\t0. Exit" << endl;
         cout << "Enter choice=" << endl;
         cin >> choice;
         switch (choice)
@@ -45,22 +45,12 @@ int main()
                 cout << "Enter File Name" << endl;
                 cin >> fileName;
             }
-            readSingleStudent(name);
-            break;
-        case 4:
-            cout << "If you want to change file  Enter: 1  otherwise press any no:" << endl;
-            cin >> continu;
-            if (continu == 1)
-            {
-                cout << "Enter File Name" << endl;
-                cin >> fileName;
-            }
             cout << "We are reading students data" << endl;
             readAllstudent(fileName);
             break;
-
-        case 5:
-            int RollNo;
+           
+        case 4:
+             int RollNo;
             cout << "Enter Student Roll no" << endl;
             cin >> RollNo;
             usingRollNo(fileName, RollNo);
